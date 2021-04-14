@@ -1,6 +1,7 @@
 :root{
     --fir: #000;
     --sec: rgb(203, 29, 29);
+    --secA: rgba(203, 29, 29, .4);
     --tit: 3vw;
     --reg: 1.5vw;
     --butt: 1vw;
@@ -79,6 +80,10 @@ h2{
     margin-bottom: 3%;
 }
 
+h2 a:visited{
+    color: var(--red);
+}
+
 
 p{
     /* margin-top: 3vw; */
@@ -117,7 +122,7 @@ button{
     box-shadow: 6px 9px #999;
 }
 
-button:hover {background-color: var(--sec)}
+button:hover {background-color: var(--secA)}
 
 button:active {
   background-color: red;
@@ -131,9 +136,6 @@ button:active {
     transform: translateY(4px);
   }
 
-  .red button:hover{
-      background-color: rgba(0,0,0,0);
-  }
 
 
 
