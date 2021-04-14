@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Clara Gatti Comini</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    </head>
+    <body>
+
+
+    <div class="row">
+
+            <h2 id="home">Clara <span>Gatti Comini</span></h2>
+
+
+                <audio id="vhome" src="home.mp3" type="audio/mp3"></audio>
+
+                <audio id="vbio" src="bio.mp3" type="audio/mp3"></audio>
+
+                <audio id="vconcerts" src="concerts.mp3" type="audio/mp3"></audio>
+
+                <audio id="vrepertoire" src="repertoire.mp3" type="audio/mp3"></audio>
+
+                <audio id="vteaching" src="teaching.mp3" type="audio/mp3"></audio>
+
+                <audio id="vpress" src="press.mp3" type="audio/mp3"></audio>
+
+                <audio  id="vcontacts"src="contacts.mp3" type="audio/mp3"></audio>
+        <div class="menucontainer">
+            <div class="menu">
+                <button  id="bbio">Bio</button>
+                <button  id="bconcerts">Concerts</button>
+                <button  id="brepertoire">Repertoire</button>
+                <button  id="bteaching">Teaching</button>
+                <button  id="bpress">Press</button>
+                <button  id="bcontacts">Contacts</button>
+            </div>
+        </div>
+
+        <div class="column2">
+
+        <!-- <p id="hometext">is an harpist based in London.</p> -->
+
+
+        <div class="content" id="bio">
+            <h2>Bio</h2>
+            <zero-md src="./text/bio.md" class = "mainT">
+                <template data-merge="prepend">
+                    <link rel="stylesheet" href="style.css">
+                  </template>
+            </zero-md>
+        </div>
+
+        <div class="content" id="concerts">
+            <h2>Concerts</h2>
+            <zero-md src="./text/concerts.md" class = "mainT">
+                <template data-merge="prepend">
+                    <link rel="stylesheet" href="style.css">
+                  </template>
+            </zero-md>
+        </div>
+
+        <div class="content" id="repertoire">
+            <h2>Repertoire</h2>
+            <zero-md src="./text/repertoire.md" class = "mainT">
+                <template data-merge="prepend">
+                    <link rel="stylesheet" href="style.css">
+                  </template>
+            </zero-md>
+        </div>
+
+        <div class="content" id="teaching">
+            <h2>Teaching</h2>
+            <zero-md src="./text/teaching.md" class = "mainT">
+                <template data-merge="prepend">
+                    <link rel="stylesheet" href="style.css">
+                  </template>
+            </zero-md>
+        </div>
+
+        <div class="content" id="press">
+            <h2>Gallery</h2>
+            <zero-md src="./text/gallery.md" class = "mainT">
+                <template data-merge="prepend">
+                    <link rel="stylesheet" href="style.css">
+                  </template>
+            </zero-md>
+        </div>
+
+        <div class="content" id="contacts">
+            <h2>Contacts</h2>
+            <zero-md src="./text/contacts.md" class = "mainT">
+                <template data-merge="prepend">
+                    <link rel="stylesheet" href="style.css">
+                  </template>
+            </zero-md>
+        </div>
+
+        </div>
+
+    </div>
+
+        <div class="footer">
+            <a href="mailto:info@claragatticomini.com">info@claragatticomini.com</a>
+        </div> 
+
+
+        <script src="main.js"></script>
+        <script defer>
+
+        $('button').click(function(){
+            $('button.red').removeClass('red')
+                $(this).addClass('red');
+        });
+
+        </script>
+    </body>
+</html>
