@@ -64,6 +64,8 @@ body{
     text-decoration: none;
 }
 
+
+
 span{
     color: var(--fir);
 }
@@ -85,6 +87,10 @@ p{
     font-size: var(--reg);
 } 
 
+a:link, a:visited{
+    text-decoration: none;
+}
+
 .menucontainer{
     position: fixed;
     right: var(--padding);
@@ -100,6 +106,7 @@ p{
 }
 
 button{
+
     /* margin-top: 2vw; */
     border: solid var(--fir) 2px;
     width: 8vw;  
