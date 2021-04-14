@@ -5,7 +5,10 @@
     --tit: 3vw;
     --reg: 1.5vw;
     --butt: 1vw;
-    --padding: 10%
+    --padding: 10%;
+    --subtit: 2.2vw;
+    --bold: ortbold;
+    --light: ortlight;
 }
 
 @font-face {
@@ -17,16 +20,6 @@
     font-family: ortlight;
     src: url(Ortica-Light.woff);
   }
-
-  :root{
-    --fir: #000;
-    --sec: #f00;
-    --tit: 3vw;
-    --subtit: 2.2vw;
-    --reg: 1.5vw;
-    --bold: ortbold;
-    --light: ortlight;
-}
 
 
 *{
@@ -196,8 +189,73 @@ font-family: var(--light);
     margin-top: 3vw;
 }
 
-/* iframe{
-    width: 100%;
-} */
 
-/* .content { display: none; } */
+
+
+
+@media only screen and (max-width: 600px) {
+
+    :root{
+        --fir: #000;
+        --sec: rgb(203, 29, 29);
+        --secA: rgba(203, 29, 29, .4);
+        --tit: 9vw;
+        --reg: 5vw;
+        --butt: 1vw;
+        --padding: 10%;
+        --subtit: 8vw;
+        --bold: ortbold;
+        --light: ortlight;
+        --buttM: 70%
+    }
+
+    .row{
+        padding-top: 10%;
+    }
+
+    h2{
+        line-height: var(--subtit);
+        margin-bottom: 10%;
+    }
+
+    .menu{
+        flex-direction: row;
+        position: fixed;
+        left: 10%;
+        width: 80%;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        height: 10%;
+    }
+
+    .menucontainer{
+        width: 80%;
+        /* height: 10%; */
+        margin-top: 6vh;
+    }
+
+    button{
+        width: 90px;
+        height: 25px;
+        /* line-height: 1px; */
+        font-size: var(--buttM);
+        box-shadow: 3px 4px #999;
+    }
+
+
+    
+    h2{
+        position: fixed;
+    }
+
+    .text{
+        margin-top: 45%;
+        width: auto;
+    }
+
+    .text h2{
+        display: none;
+    }
+
+
+}
