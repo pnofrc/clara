@@ -1,6 +1,3 @@
-REPERTOIRE
-
-
 
 || Solo Harp originals| 
 | :------------- |-------------:| 
